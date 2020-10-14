@@ -28,10 +28,6 @@ with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: Text('WhatsApp'),
-        // actions: [
-        //   IconButton(icon: Icon(Icons.search), onPressed: (){}),
-        //   IconButton(icon: Icon(Icons.more_vert), onPressed: (){})
-        // ],
         bottom: new TabBar(
           controller: _tabController,
           indicatorColor: Colors.white,
@@ -40,9 +36,12 @@ with SingleTickerProviderStateMixin {
            Tab(text: 'CHATS'),
            Tab(text: 'STATUS'),
            Tab(text: 'CALLS'),
-
           ],
         ),
+         actions: [
+          IconButton(icon: Icon(Icons.search), onPressed: (){}),
+          IconButton(icon: Icon(Icons.more_vert), onPressed: (){})
+         ],
       ),
 
      body: new TabBarView(
