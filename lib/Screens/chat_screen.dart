@@ -11,6 +11,7 @@ class ChatsScreen extends StatelessWidget {
           Divider(height: 10.0),
           ListTile(
             leading: CircleAvatar(
+              radius: 30,
               foregroundColor: Theme.of(context).primaryColor,
               backgroundColor: Colors.grey,
               backgroundImage: NetworkImage(dummyData[i].avatarUrl),
