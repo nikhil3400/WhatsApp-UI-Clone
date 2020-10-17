@@ -32,7 +32,10 @@ class CallsScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.grey, fontSize: 15.0),
                 ),
             ),
-            trailing: Icon(Icons.video_call_rounded),
+            trailing: Icon(
+              Icons.video_call_rounded,
+              color: Color(0xff075E54),
+              ),
           )
         ],
       ),
