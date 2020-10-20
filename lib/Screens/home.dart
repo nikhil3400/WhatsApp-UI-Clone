@@ -14,6 +14,7 @@ class _HomeState extends State<Home>
 with SingleTickerProviderStateMixin {
 
   TabController _tabController;
+  List<String> menu = ['New group', 'New broadcast', 'WhatsApp Web', 'Starred messages', 'Settings'];
 
 
   @override
@@ -40,7 +41,18 @@ with SingleTickerProviderStateMixin {
         ),
          actions: [
           IconButton(icon: Icon(Icons.search), onPressed: (){}),
-          IconButton(icon: Icon(Icons.more_vert), onPressed: (){})
+          // IconButton(icon: Icon(Icons.more_vert), onPressed: (){})
+          PopupMenuButton(
+            onSelected: null,
+            itemBuilder: (BuildContext context) {
+              return menu.map((String s){
+                return PopupMenuItem<String>(
+                  value: s,
+                  child: Text(s),
+                );
+              }).toList();
+            }
+          ),
          ],
       ),
 
