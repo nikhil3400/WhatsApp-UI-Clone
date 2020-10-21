@@ -67,16 +67,6 @@ with SingleTickerProviderStateMixin {
        ], 
      ),
 
-     floatingActionButton: FloatingActionButton(
-       backgroundColor: Color(0xff25D366),
-       child: new Icon(
-         Icons.message,
-         color: Colors.white,
-       ),
-       onPressed: (){
-         print('New Chats');
-       },
-     ),
     );
   }
 }
